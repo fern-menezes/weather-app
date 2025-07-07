@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #011936 ;
+    --main-color: #e8ebf7;
+
+    --font-family: "Noto Sans Sunuwar", sans-serif;
+}
+
+body{
+    background: radial-gradient(circle,rgba(2, 0, 36, 1) 0%, rgba(28, 80, 163, 1) 100%, rgba(171, 228, 255, 1) 48%);
+    font-family: var(--font-family);
+    color: var(--main-color);
+    text-align: center;
+
+    
+}
+header h1{
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+main{
+    background: var(--main-color);
+    margin: 0 auto;
+    width: 42.5rem;
+    height: 20rem;
+    border-radius: 1rem;
+
+}
+form input{
+    padding: .75rem;
+    margin-top: 5rem;
+    width: 70%;
+    border: none;
+    border-radius: .5rem;
+
+    font: 500 var(--font-family);
+    color: var(--bg-color);
+}
+form button{
+    padding: 0.75rem;
+    border: none;
+    border-radius: .5rem;
+
+    font: 500 var(--font-family);
+    background-color: #ffc440;
+    cursor: pointer;
+}
+
+#weather-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 3rem;
+
+    color: var(--bg-color);
+
+}
