@@ -54,6 +54,6 @@ const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=
 - [ ] Adicionar modo noturno com pixel art temática
 
 ## 📸 Créditos
-API: OpenWeatherMap
-Ícones em pixel art: criados manualmente e gerados com IA
-Feito com 💜 por Fernanda
+ - API: OpenWeatherMap
+ - Ícones em pixel art: criados manualmente e gerados com IA
+#### Feito com 💜 por Fernanda
