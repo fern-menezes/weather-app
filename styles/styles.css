@@ -5,60 +5,92 @@
 }
 
 :root{
-    --bg-color: #011936 ;
-    --main-color: #e8ebf7;
+    --bg-primary: #F0F8FF	;
+    --bg-card: #1C2E45;
+    --border-color: #A7C7E7;
+    --txt-color: #DCEFFF;
+    --bg-btn: #92B6F4;
+    --btn-shadow: #4B6BAE	;
+    --hover-btn: #9dcbfe;
 
-    --font-family: "Noto Sans Sunuwar", sans-serif;
+    --font-family: "Pixelify Sans", sans-serif;
 }
 
 body{
-    background: radial-gradient(circle,rgba(2, 0, 36, 1) 0%, rgba(28, 80, 163, 1) 100%, rgba(171, 228, 255, 1) 48%);
-    font-family: var(--font-family);
-    color: var(--main-color);
-    text-align: center;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    
+    font-family: var(--font-family);
+    text-align: center;    
 }
 header h1{
     margin: 0 auto;
+    font-size: 2.5rem;
     padding-top: 5rem;
     padding-bottom: 2rem;
+
+    color: var(--bg-primary);
 }
 main{
-    background: var(--main-color);
+    background: var(--bg-card);
     margin: 0 auto;
-    width: 42.5rem;
+    width: 40rem;
     height: 20rem;
     border-radius: 1rem;
+    border: 0.25rem solid var(--border-color);
+    box-shadow: 0.25rem 0.25rem 0 var(--btn-shadow);
+
+    padding: 2rem;
 
 }
 form input{
-    padding: .75rem;
-    margin-top: 5rem;
-    width: 70%;
-    border: none;
-    border-radius: .5rem;
-
-    font: 500 var(--font-family);
-    color: var(--bg-color);
-}
-form button{
+    font-family: var(--font-family);
+    background-color: var(--bg-primary);
+    border: 4px solid var(--btn-shadow);
     padding: 0.75rem;
-    border: none;
-    border-radius: .5rem;
-
-    font: 500 var(--font-family);
-    background-color: #ffc440;
-    cursor: pointer;
+    font-size: 1rem;
+    color: var(--bg-card);
+    box-shadow: 0.25rem 0.25rem 0 var(--btn-shadow);
+    width: 60%;
 }
+form button {
+    font-family: var(--font-family);
+    background-color: var(--bg-btn);
+    border: 0.25rem solid var(--btn-shadow);
+    color: var(--txt-color);
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    box-shadow: 0.25rem 0.25rem 0 var(--btn-shadow);
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+button:hover {
+  background-color: var(--hover-btn);
+  transform: scale(0.95);
+}
+
 
 #weather-info{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 3rem;
+    color: var(--btn-shadow);
+}
 
-    padding-top: 3rem;
+.weather-dados{
+    text-align: left;
+}
 
-    color: var(--bg-color);
+#weather-info span{
+    font-size: 4rem;
+    color: var(--txt-color);
+}
 
+.weather-img img {
+  width: 150px;
+  height: 150px;
+  image-rendering: pixelated;
 }
