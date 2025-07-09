@@ -1,3 +1,5 @@
+declare const API_KEY: string;
+
 const form = document.querySelector('#search-form > form');
 const input: HTMLInputElement | null = document.querySelector("#input-location");
 
@@ -17,7 +19,7 @@ form?.addEventListener('submit', async (event) => {
     }
 
     //fazer uma requisição na API
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=a21e7eed76c636f0190004c96585ccc2&units=metric`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`);
 
     //converter a resposta em um JSON
     const dados = await response.json();
