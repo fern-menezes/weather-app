@@ -39,7 +39,7 @@ form?.addEventListener('submit', async (event) => {
                 <p>${infos.description}</p>
             </div>
             <div class="weather-img">
-                <img src="${infos.icon}" alt="" width="350px">
+                <img src="${infos.icon}" alt="" width="300px">
             </div>
     `;
 });
